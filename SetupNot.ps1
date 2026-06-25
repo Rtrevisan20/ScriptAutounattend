@@ -204,9 +204,7 @@ try {
             Add-Content -Path $path -Value $content
         }
     }
-	#Add-IfNotExists $profilePath '$HistorySaveLocalPath = "D:\Programas\PowerShell\ConsoleHost_history.txt"'	
     Add-IfNotExists $profilePath '$OhMyPoshThemesFile   = "~/AppData/Local/Programs/oh-my-posh/themes/HardDev.omp.json"' 
-    #Add-IfNotExists $profilePath '$OhMyPoshThemesFile   = "D:\Programas\PowerShell\Styles\HardDev.omp.json"' 
 	Add-IfNotExists $profilePath '$StyleColors = @{'
     Add-IfNotExists $profilePath '	"Command"                   	= "#EFFA78"'
 	Add-IfNotExists $profilePath '	"Comment"                    	= "#483C67"'
@@ -238,7 +236,6 @@ try {
 	Add-IfNotExists $profilePath '$PSStyle.FileInfo.Directory            		= $PSStyle.Background.FromRGB(0xFF6E67)'
 	Add-IfNotExists $profilePath '$PSStyle.FileInfo.SymbolicLink         	= $PSStyle.Foreground.FromRGB(0x2f6aff)'
 	Add-IfNotExists $profilePath '$PSStyle.FileInfo.Executable           	= $PSStyle.Foreground.FromRGB(0xB8B80A)'
-	#Add-IfNotExists $profilePath 'Set-PSReadLineOption -HistorySavePath $HistorySaveLocalPath'
 	Add-IfNotExists $profilePath 'Set-PSReadLineOption -PredictionViewStyle ListView '
 	Add-IfNotExists $profilePath 'Set-PSReadLineOption -Colors $StyleColors  '
 	Add-IfNotExists $profilePath 'clear-host'
@@ -259,7 +256,7 @@ try {
 if (Get-Command oh-my-posh -ErrorAction SilentlyContinue) {
     try {
         $themePath = "$env:LOCALAPPDATA\Programs\oh-my-posh\themes\"
-        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Rtrevisan20/TampletesDelphi/master/HardDev.omp.json" -OutFile $themePath
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Rtrevisan20/ScriptAutounattend/master/HardDev.omp.json" -OutFile $themePath
         Write-Host "✅ Tema personalizado baixado com sucesso."  -ForegroundColor Green
     } catch {
         Write-Host "❌ Falha ao baixar o tema personalizado. Continuando..."  -ForegroundColor Red

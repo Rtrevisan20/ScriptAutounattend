@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{.Shell}} \u276f {{.UserName}}@{{.HostName}}",
+  "palette": {
+    "Foreground-Path": "#EFDCF9",
+    "Foreground-Git": "#643d88",
+    "Branch-Git": "#806597",
+    "background": "#191622",
+    "black": "#000000",
+    "blue": "#BD93F9",
+    "brightBlack": "#4D4D4D",
+    "brightBlue": "#CAA9FA",
+    "brightCyan": "#AA91E3",
+    "brightGreen": "#5AF78E",
+    "brightPurple": "#FF92D0",
+    "brightRed": "#FF6E67",
+    "brightWhite": "#E6E6E6",
+    "brightYellow": "#EAF08D",
+    "cursorColor": "#F8F8F2",
+    "cyan": "#8D79BA",
+    "foreground": "#E1E1E6",
+    "green": "#50FA7B",
+    "purple": "#FF79C6",
+    "red": "#FF5555",
+    "selectionBackground": "#41414D",
+    "white": "#BFBFBF",
+    "yellow": "#EFFA78",
+    "Branch": "#B8B80A"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:brightGreen",
+          "style": "plain",
+          "template": "<p:purple>\ueb99</> {{ .UserName }} <p:brightPurple>\u276f</>",
+          "type": "session"
+        },
+        {
+          "foreground": "p:purple",
+          "properties": {
+            "folder_separator_icon": "/",
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": " \uf07b {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:purple",
+          "template": "\u276f "
+        },
+        {
+          "foreground": "p:Branch",
+          "style": "plain",
+          "template": "<p:Foreground-Path>git \u276f</> {{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "properties": {
+            "always_enabled": true
+          },
+          "template": "{{ .FormattedMs }}",
+          "foreground": "p:red",
+          "type": "executiontime",
+          "style": "powerline"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "always_enabled": true
+          },
+          "template": "➜ ",
+          "foreground": "p:brightCyan",
+          "type": "status",
+          "style": "powerline",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}p:red{{else}}p:brightCyan{{ end }}"
+          ]
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3
+}

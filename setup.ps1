@@ -259,7 +259,7 @@ try {
 if (Get-Command oh-my-posh -ErrorAction SilentlyContinue) {
     try {
         $themePath = "$env:LOCALAPPDATA\Programs\oh-my-posh\themes\"
-        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Rtrevisan20/TampletesDelphi/master/HardDev.omp.json" -OutFile $themePath
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Rtrevisan20/ScriptAutounattend/master/HardDev.omp.json" -OutFile $themePath
         Write-Host "✅ Tema personalizado baixado com sucesso."  -ForegroundColor Green
     } catch {
         Write-Host "❌ Falha ao baixar o tema personalizado. Continuando..."  -ForegroundColor Red
