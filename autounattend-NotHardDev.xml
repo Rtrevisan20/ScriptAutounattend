@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=pt-BR&Locale=pt-BR&Keyboard=00010416&GeoLocation=32&PEMode=Default&WindowsEditionMode=Generic&WindowsEdition=pro&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&ComputerNameMode=Custom&ComputerName=HardDev-Not&TimeZoneMode=Implicit&UserAccountMode=Unattended&AccountName0=HardDev&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=None&ShowFileExtensions=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Icon&TaskbarIconsMode=Custom&TaskbarIconsXml=%3CLayoutModificationTemplate+xmlns%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FLayoutModification%22+xmlns%3Adefaultlayout%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FFullDefaultLayout%22+xmlns%3Astart%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FStartLayout%22+xmlns%3Ataskbar%3D%22http%3A%2F%2Fschemas.microsoft.com%2FStart%2F2014%2FTaskbarLayout%22+Version%3D%221%22%3E%0D%0A++%3CCustomTaskbarLayoutCollection+PinListPlacement%3D%22Replace%22%3E%0D%0A++++%3Cdefaultlayout%3ATaskbarLayout%3E%0D%0A++++++%3Ctaskbar%3ATaskbarPinList%3E%0D%0A++++++++%3Ctaskbar%3ADesktopApp+DesktopApplicationID%3D%22Microsoft.Windows.Explorer%22+%2F%3E%0D%0A++++++%3C%2Ftaskbar%3ATaskbarPinList%3E%0D%0A++++%3C%2Fdefaultlayout%3ATaskbarLayout%3E%0D%0A++%3C%2FCustomTaskbarLayoutCollection%3E%0D%0A%3C%2FLayoutModificationTemplate%3E&DisableWidgets=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Custom&StartPinsJson=%7B%0D%0A++%22pinnedList%22%3A+%5B%0D%0A++++%7B%0D%0A++++++%22desktopAppLink%22%3A+%22%25APPDATA%25%5C%5CMicrosoft%5C%5CWindows%5C%5CStart+Menu%5C%5CPrograms%5C%5CFile+Explorer.lnk%22%0D%0A++++%7D%0D%0A++%5D%0D%0A%7D&DisableUac=true&DisableSac=true&DisableSmartScreen=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DisablePointerPrecision=true&CoreIsolationMode=Enabled&DeleteWindowsOld=true&EffectsMode=Default&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Default&StartFoldersMode=Custom&StartFolderDownloads=true&StartFolderFileExplorer=true&StartFolderNetwork=true&StartFolderSettings=true&WifiMode=Unattended&WifiName=HardDev&WifiAuthentication=WPA2PSK&WifiPassword=Masterkey150711&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Default&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%23d0000c&WallpaperMode=Default&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveStore=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOpenSSHClient=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShellISE=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveRdpClient=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsMediaPlayer=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=Set-Volume+-DriveLetter+%27C%27+-NewFileSystemLabel+%27Sistema%27%3B&SystemScriptType0=Ps1&SystemScript1=%24uri+%3D+%5Buri%5D%3A%3Anew%28+%27https%3A%2F%2Faka.ms%2Fvs%2F17%2Frelease%2Fvc_redist.x64.exe%27+%29%3B%0D%0A%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0AIniciar-Processo+-CaminhoArquivo+%24arquivo+-ListaDeArgumentos+%27%2Fquieto+%2Fsemreiniciar%27+-Aguardar%3B%0D%0ARemover-Item+-LiteralPath+%24arquivo+-A%C3%A7%C3%A3oDeErro+%27ContinuarSilenciosamente%27%3B&SystemScriptType1=Ps1&FirstLogonScript0=%23+Este+script+foi+projetado+para+ser+executado+ap%C3%B3s+uma+instala%C3%A7%C3%A3o+limpa+do+Windows+ou+formata%C3%A7%C3%A3o.+Ele+instala+programas+essenciais+e+o+que+pode+ser+a+melhor+configura%C3%A7%C3%A3o+de+shell+j%C3%A1+criada%3A+ProcrastinateShell.%0D%0A%23+Para+execut%C3%A1-lo+a+partir+do+sistema%2C+temos+duas+op%C3%A7%C3%B5es%3A+remover+a+restri%C3%A7%C3%A3o+de+acesso+%C3%A0+internet+e%2C+em+seguida%2C+alterar+a+pol%C3%ADtica+para+o+usu%C3%A1rio+atual+ou+ignorar+o+script.%0D%0A%23+Unblock-File+-Path+.%5Csetup.ps1%0D%0A%23+Set-ExecutionPolicy+RemoteSigned+-Scope+CurrentUser%0D%0A%23+ou+use+para+execut%C3%A1-lo+sem+alterar+a+pol%C3%ADtica%0D%0A%23+powershell+-ExecutionPolicy+Bypass+-File+.%5Csetup.ps1%0D%0A%0D%0A%23+Fun%C3%A7%C3%A3o+para+verificar+se+o+script+est%C3%A1+sendo+executado+como+administrador%0D%0A%0D%0A%24scriptName+%3D+%22SetupNot.ps1%22%3B%0D%0A%0D%0Afunction+Test-Admin+%7B%0D%0A++++%24currentIdentity+%3D+%5BSecurity.Principal.WindowsIdentity%5D%3A%3AGetCurrent%28%29%0D%0A++++%24principal+%3D+New-Object+Security.Principal.WindowsPrincipal%28%24currentIdentity%29%0D%0A++++return+%24principal.IsInRole%28%5BSecurity.Principal.WindowsBuiltInRole%5D%3A%3AAdministrator%29%0D%0A%7D%0D%0A%23+Verificar+permiss%C3%B5es+elevadas%0D%0Aif+%28-not+%28Test-Admin%29%29+%7B%0D%0A++++Write-Host+%22Este+script+requer+privil%C3%A9gios+elevados+%28Administrador%29.+Execute-o+como+Administrador.%22+-ForegroundColor+Red%0D%0A++++exit%0D%0A%7D%0D%0A%23+1.+Obtenha+informa%C3%A7%C3%B5es+sobre+a+vers%C3%A3o+mais+recente.%0D%0A%24repo+%3D+%22microsoft%2Fwinget-cli%22%0D%0A%24urlApi+%3D+%22https%3A%2F%2Fapi.github.com%2Frepos%2F%24repo%2Freleases%2Flatest%22%0D%0Atry+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+Consultando+ultima+vers%C3%A3o+do+winget...%22+-ForegroundColor+Cyan%0D%0A++++%24latestRelease+%3D+Invoke-RestMethod+-Uri+%24urlApi%0D%0A++++%24latestVersionTag+%3D+%24latestRelease.tag_name.Replace%28%27v%27%2C+%27%27%29.Trim%28%29%0D%0A++++%24requiredVersion+%3D+%5Bversion%5D%24latestVersionTag%0D%0A++++%24downloadUrl+%3D+%28%24latestRelease.assets+%7C+Where-Object+%7B+%24_.name+-like+%22*.msixbundle%22+%7D%29.browser_download_url+%7C+Select-Object+-First+1%0D%0A%0D%0A++++%23+2.+Verifique+a+vers%C3%A3o+atual%0D%0A++++%24currentVersion+%3D+%5Bversion%5D%220.0.0.0%22%0D%0A++++if+%28Get-Command+winget+-ErrorAction+SilentlyContinue%29+%7B%0D%0A++++++++%24currentVersion+%3D+%5Bversion%5D%28winget+-v%29.Replace%28%27v%27%2C+%27%27%29.Trim%28%29%0D%0A++++%7D%0D%0A%0D%0A++++if+%28%24currentVersion+-ge+%24requiredVersion%29+%7B%0D%0A++++++++Write-Host+%22%E2%9C%85+Winget+est%C3%A1+atualizado+%28%24currentVersion%29.%22+-ForegroundColor+Green%0D%0A++++%7D+else+%7B%0D%0A++++++++Write-Host+%22%F0%9F%9A%80+Atualizando+de+%24currentVersion+a+%24requiredVersion...%22+-ForegroundColor+Yellow%0D%0A++++++++%24destination+%3D+%22%24env%3AUSERPROFILE%5CDownloads%5CWinget_Update.msixbundle%22%0D%0A++++++++Invoke-WebRequest+-Uri+%24downloadUrl+-OutFile+%24destination%0D%0A%0D%0A+++++++%23+%2D%2D-+AQUI+EST%C3%81+A+SOLU%C3%87%C3%83O+PARA+O+ERRO+0x80073D02+%2D%2D-%0D%0A++++++++Write-Host+%22%F0%9F%9A%80+Ecerrando+processos+bloquedos...%22+-ForegroundColor+Yellow%0D%0A++++++++%0D%0A%09%09%23+Encerramos+qualquer+inst%C3%A2ncia+do+Winget+ou+do+instalador%0D%0A++++++++Get-Process+-Name+%22WinGet%22%2C+%22AppInstaller%22+-ErrorAction+SilentlyContinue+%7C+Stop-Process+-Force%0D%0A++++++++Start-Sleep+-Seconds+2+%23+Estamos+dando+um+descanso+ao+sistema.%0D%0A++++++++Write-Host+%22%F0%9F%9A%80+Instalando+pacote+%28for%C3%A7ando+o+encerramento+do+aplicativo%29...%22++-ForegroundColor+Yellow%0D%0A++++++++%0D%0A%09%09%23+Usamos+o+par%C3%A2metro+-ForceApplicationShutdown+para+fazer+com+que+o+pr%C3%B3prio+Windows+tente+fechar+tudo+o+que+estiver+interferindo.%0D%0A++++++++Add-AppxPackage+-Path+%24destination+-ForceApplicationShutdown+-ErrorAction+Stop%0D%0A++++++++Write-Host+%22%E2%9C%85+Feito%21+Winget+atualizado+para+a+vers%C3%A3o+%24requiredVersion.%22+-ForegroundColor+Green%0D%0A++++++++Remove-Item+%24destination+-ErrorAction+SilentlyContinue%0D%0A++++%7D%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+Error%3A+%24_%22+-ForegroundColor+Red%0D%0A++++Write-Host+%22%F0%9F%9A%80+Observa%C3%A7%C3%A3o%3A+Certifique-se+de+executar+o+PowerShell+como+ADMINISTRADOR..%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+Function+to+check+if+PowerShell+7%2B+is+running%0D%0Afunction+Is-PowerShell7+%7B%0D%0A++++return+%24PSVersionTable.PSVersion.Major+-ge+7%0D%0A%7D%0D%0A%23+Certifique-se+de+que+estamos+executando+o+PowerShell+7%3B+caso+contr%C3%A1rio%2C+instale-o+e+saia+do+script.%0D%0Aif+%28-not+%28Is-PowerShell7%29%29+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+%C3%89+necess%C3%A1rio+o+PowerShell+7+ou+superior.+Instalando+o+PowerShell+7...%22++-ForegroundColor+Yellow%0D%0A++++try+%7B%0D%0A++++++++winget+install+%2D%2Did+Microsoft.Powershell+%2D%2Dsource+winget+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsilent%0D%0A++++++++Write-Host+%22%E2%9C%85+PowerShell+7+Instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A++++++++Write-Host+%22%E2%9C%85+Continue+no+PowerShell+7.%22+-ForegroundColor+Green%0D%0A++++++++Start-Sleep+-Seconds+2%0D%0A++++++++%23+Mudando+para+o+PowerShell+7.%0D%0A++++++++%24desktopPath+%3D+%5BSystem.IO.Path%5D%3A%3ACombine%28%24env%3AUSERPROFILE%2C+%22Desktop%22%2C++%24scriptName%29%0D%0A++++++++Start-Process+%22pwsh%22+-ArgumentList+%22-NoProfile+-NoExit+-File+%60%22%24desktopPath%60%22%22%0D%0A++++++++exit%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+A+instala%C3%A7%C3%A3o+do+PowerShell+7+falhou.+Encerrando+o+script.%22+-ForegroundColor+Red%0D%0A++++++++exit%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+O+PowerShell+7+j%C3%A1+est%C3%A1+em+execu%C3%A7%C3%A3o.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+Verifique+e+instale+o+Terminal+do+Windows%2C+caso+ainda+n%C3%A3o+esteja+instalado.%0D%0Aif+%28-not+%28Get-Command+wt+-ErrorAction+SilentlyContinue%29%29+%7B%0D%0A++++Write-Host+%22Terminal+do+Windows+n%C3%A3o+encontrado%2C+instalando...%22+-ForegroundColor+Gray%0D%0A++++try+%7B%0D%0A++++++++winget+install+%2D%2Did+Microsoft.WindowsTerminal+-e+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsilent%0D%0A++++++++Write-Host+%22%E2%9C%85+O+Terminal+do+Windows+foi+instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+A+instala%C3%A7%C3%A3o+do+Windows+Terminal+falhou.+Saindo+do+script.%22++-ForegroundColor+Red%0D%0A++++++++exit%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+O+Terminal+do+Windows+j%C3%A1+est%C3%A1+instalado.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+Instale+Oh+My+Posh%0D%0Aif+%28-not+%28Get-Command+oh-my-posh+-ErrorAction+SilentlyContinue%29%29+%7B%0D%0A++++try+%7B%0D%0A++++++++winget+install+JanDeDobbeleer.OhMyPosh+-s+winget+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsilent%0D%0A++++++++Write-Host+%22%E2%9C%85+Oh+My+Posh+instalado+com+sucesso.+Recarregar...%22+-ForegroundColor+Green%0D%0A++++++++Start-Sleep+-Seconds+2%0D%0A++++++++%23+Inicie+outro+PowerShell+para+carregar+os+comandos+do+Oh+My+Posh%0D%0A++++++++%24desktopPath+%3D+%5BSystem.IO.Path%5D%3A%3ACombine%28%24env%3AUSERPROFILE%2C+%22Desktop%22%2C%24scriptName%29%0D%0A++++++++Start-Process+%22pwsh%22+-ArgumentList+%22-NoProfile+-File+%60%22%24desktopPath%60%22%22%0D%0A++++++++Start-Sleep+-Seconds+1%0D%0A++++++++exit%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+A+instala%C3%A7%C3%A3o+do+Oh+My+Posh+falhou.+Continuando...%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D%0D%0A%23+Define+o+caminho+para+a+pasta+de+temas%0D%0A%24ThemesDir+%3D+Join-Path++%24env%3ALOCALAPPDATA+%22Programs%5Coh-my-posh%5Cthemes%22%0D%0A%23+Cria+a+pasta+se+n%C3%A3o+existir%0D%0Aif+%28-not+%28Test-Path+%24ThemesDir%29%29+%7B%0D%0A++++New-Item+-ItemType+Directory+-Path+%24ThemesDir+%7C+Out-Null%0D%0A++++Write-Host+%22%E2%9C%85+Pasta+criada+em%3A+%24ThemesDir%22+-ForegroundColor+Green%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+A+pasta+j%C3%A1+existe+em%3A+%24ThemesDir%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%23+%2D%2D-+Fun%C3%A7%C3%A3o+de+detec%C3%A7%C3%A3o+de+fonte+aprimorada+%2D%2D-%0D%0Afunction+Is-FontInstalled+%7B%0D%0A++++param+%28%0D%0A++++++++%5Bstring%5D%24FontName%0D%0A++++%29%0D%0A++++%23+Caminhos+do+registro+onde+o+Windows+armazena+as+fontes+instaladas%0D%0A++++%24regPaths+%3D+%40%28%0D%0A++++++++%22HKLM%3A%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CFonts%22%2C%0D%0A++++++++%22HKCU%3A%5CSoftware%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CFonts%22%0D%0A++++%29%0D%0A++++foreach+%28%24path+in+%24regPaths%29+%7B%0D%0A++++++++if+%28Test-Path+%24path%29+%7B%0D%0A++++++++++++%23+Verificamos+se+alguma+propriedade+do+registro+cont%C3%A9m+o+nome+da+fonte%0D%0A++++++++++++%24fonts+%3D+Get-ItemProperty+-Path+%24path%0D%0A++++++++++++if+%28%24fonts.PSObject.Properties.Name+-like+%22*%24FontName*%22%29+%7B%0D%0A++++++++++++++++return+%24true%0D%0A++++++++++++%7D%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A++++return+%24false%0D%0A%7D%0D%0A%0D%0A%23+Instalar+as+fontes+%28se+o+OMP+existir%29%0D%0Aif+%28Get-Command+oh-my-posh+-ErrorAction+SilentlyContinue%29+%7B%0D%0A++++%24fuentes+%3D+%40%28%22Meslo%22%2C+%22MesloLG+Nerd+Font%22%29%0D%0A++++foreach+%28%24f+in+%24fuentes%29+%7B%0D%0A++++++++if+%28-not+%28Is-FontInstalled+-FontName+%22%24f*Nerd+Font%22%29%29+%7B%0D%0A++++++++++++Write-Host+%22%F0%9F%9A%80+Instalando+fonte+%24f...%22+-ForegroundColor+Yellow%0D%0A++++++++++++try+%7B%0D%0A++++++++++++++++%23+Usamos+o+nome+que+o+oh-my-posh+reconhece+internamente%0D%0A++++++++++++++++%24nombreFuente+%3D+%24f.ToLower%28%29%0D%0A++++++++++++++++oh-my-posh+font+install+%24nombreFuente%0D%0A++++++++++++++++Write-Host+%22%E2%9C%85+%24f+instalada+corretamente.%22+-ForegroundColor+Green%0D%0A++++++++++++%7D+catch+%7B%0D%0A++++++++++++++++Write-Host+%22%E2%9D%8C+Erro+ao+instalar+a+fonte+%24f.%22+-ForegroundColor+Red%0D%0A++++++++++++%7D%0D%0A++++++++%7D+else+%7B%0D%0A++++++++++++Write-Host+%22%F0%9F%9A%80+A+fonte+%24f+j%C3%A1+est%C3%A1+instalada.+Ignorando...%22+-ForegroundColor+Yellow%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%23+Obtenha+o+caminho+do+arquivo+settings.json+no+Terminal+do+Windows%0D%0A%24terminalSettingsPath+%3D+%22%24env%3ALOCALAPPDATA%5CPackages%5CMicrosoft.WindowsTerminal_8wekyb3d8bbwe%5CLocalState%5Csettings.json%22%0D%0A%23+Certifique-se+de+que+o+arquivo+settings.json+exista+antes+de+tentar+modific%C3%A1-lo.%0D%0Aif+%28-not+%28Test-Path+%24terminalSettingsPath%29%29+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+O+arquivo+Settings.json+n%C3%A3o+foi+encontrado.+Certifique-se+de+que+o+Terminal+do+Windows+esteja+instalado+e+executado+pelo+menos+uma+vez.%22+-ForegroundColor+Red%0D%0A++++exit%0D%0A%7D%0D%0A%23+Leia+o+arquivo+settings.json%0D%0A%24settingsJson+%3D+Get-Content+-Path+%24terminalSettingsPath+-Raw+%7C+ConvertFrom-Json%0D%0A%23+Crie+a+se%C3%A7%C3%A3o+%27defaults%27+se+ela+n%C3%A3o+existir.%0D%0Aif+%28-not+%24settingsJson.profiles.defaults%29+%7B%0D%0A++++%24settingsJson.profiles.defaults+%3D+%40%7B%7D%0D%0A%7D%0D%0A%23+Crie+a+se%C3%A7%C3%A3o+%27fonte%27+se+ela+n%C3%A3o+existir.%0D%0Aif+%28-not+%24settingsJson.profiles.defaults.font%29+%7B%0D%0A++++%24settingsJson.profiles.defaults+%7C+Add-Member+-MemberType+NoteProperty+-Name+%22font%22+-Value+%40%7B%7D%0D%0A%7D%0D%0A%24settingsJson.profiles.defaults.font.face+%3D+%22MesloLGM+Nerd+Font%22%0D%0A%24settingsJson.profiles.defaults.font.size+%3D+12%0D%0A%23+Salvar+altera%C3%A7%C3%B5es+em+settings.json%0D%0A%24settingsJson+%7C+ConvertTo-Json+-Depth+100+%7C+Set-Content+-Path+%24terminalSettingsPath+-Force%0D%0AWrite-Host+%22%E2%9C%85+O+arquivo+Settings.json+foi+atualizado+com+a+fonte+MesloLGM+Nerd+e+os+perfis.%22+-ForegroundColor+Green%0D%0A%0D%0A%23+Obtenha+o+caminho+correto+do+perfil+dependendo+da+vers%C3%A3o+do+PowerShell%0D%0A%24profilePath+%3D+if+%28Is-PowerShell7%29+%7B%0D%0A++++%22%24env%3AUSERPROFILE%5CDocuments%5CPowerShell%5CMicrosoft.PowerShell_profile.ps1%22%0D%0A%7D+else+%7B%0D%0A++++%22%24env%3AUSERPROFILE%5CDocuments%5CWindowsPowerShell%5Cprofile.ps1%22%0D%0A%7D%0D%0A%23+Criar+e+editar+perfil+do+PowerShell%0D%0Atry+%7B%0D%0A++++if+%28-not+%28Test-Path+%24profilePath%29%29+%7B%0D%0A++++++++New-Item+-Path+%24profilePath+-Type+File+-Force%0D%0A++++%7D%0D%0A++++%24profileContent+%3D+Get-Content+-Path+%24profilePath+-Raw%0D%0A%09function+Add-IfNotExists%28%24path%2C+%24content%29+%7B%0D%0A++++++++if+%28-not+%28%24profileContent+-contains+%24content%29%29+%7B%0D%0A++++++++++++Add-Content+-Path+%24path+-Value+%24content%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%09%23Add-IfNotExists+%24profilePath+%27%24HistorySaveLocalPath+%3D+%22D%3A%5CProgramas%5CPowerShell%5CConsoleHost_history.txt%22%27%09%0D%0A++++Add-IfNotExists+%24profilePath+%27%24OhMyPoshThemesFile+++%3D+%22~%2FAppData%2FLocal%2FPrograms%2Foh-my-posh%2Fthemes%2FHardDev.omp.json%22%27+%0D%0A++++%23Add-IfNotExists+%24profilePath+%27%24OhMyPoshThemesFile+++%3D+%22D%3A%5CProgramas%5CPowerShell%5CStyles%5CHardDev.omp.json%22%27+%0D%0A%09Add-IfNotExists+%24profilePath+%27%24StyleColors+%3D+%40%7B%27%0D%0A++++Add-IfNotExists+%24profilePath+%27%09%22Command%22+++++++++++++++++++%09%3D+%22%23EFFA78%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Comment%22++++++++++++++++++++%09%3D+%22%23483C67%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22ContinuationPrompt%22+++%09%3D+%22%23E1E1E6%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Default%22++++++++++++++++++++%09%09%3D+%22%23E1E1E6%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Emphasis%22+++++++++++++++++++%09%3D+%22%23c678dd%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Error%22++++++++++++++++++++++%09%09%3D+%22%23FF5555%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22InlinePrediction%22++++++++++%09%3D+%22%234D4D4D%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Keyword%22++++++++++++++++++++%09%3D+%22%2300008b%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22ListPrediction%22+++++++++++++%09%3D+%22%2398c379%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Member%22+++++++++++++++++++++%09%3D+%22%23E1E1E6%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Number%22+++++++++++++++++++++%09%3D+%22%2398c379%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Operator%22+++++++++++++++++++%09%3D+%22%23757575%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Parameter%22++++++++++++++++++%09%3D+%22%234D4D4D%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22String%22+++++++++++++++++++++%09%09%3D+%22%238D79BA%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Type%22+++++++++++++++++++++++%09%09%3D+%22%23008080%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Variable%22+++++++++++++++++++%09%09%3D+%22%23FF5555%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22ListPredictionSelected%22%09%3D+%22%2341414D%22%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%09%22Selection%22++++++++++++++++++%09%09%3D+%22%2341414D%22%7D%27%0D%0A%09Add-IfNotExists+%24profilePath+%27Import-Module+-Name+Terminal-Icons%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.FormatAccent%09%3D+%24PSStyle.Foreground.FromRGB%280x008080%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.TableHeader++++++%3D+%24PSStyle.Foreground.FromRGB%280x483C67%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.ErrorAccent+++++++%3D+%24PSStyle.Foreground.FromRGB%280xFF5555%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.Error++++++++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280xff2828%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.Warning++++++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280xff9966%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.Verbose++++++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280x008080%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Formatting.Debug++++++++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280x4D4D4D%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.Progress.Style++++++++++++++++%09%09%3D+%24PSStyle.Foreground.FromRGB%280x41b15d%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.FileInfo.Directory++++++++++++%09%09%3D+%24PSStyle.Background.FromRGB%280xFF6E67%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.FileInfo.SymbolicLink+++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280x2f6aff%29%27%0D%0A%09Add-IfNotExists+%24profilePath+%27%24PSStyle.FileInfo.Executable+++++++++++%09%3D+%24PSStyle.Foreground.FromRGB%280xB8B80A%29%27%0D%0A%09%23Add-IfNotExists+%24profilePath+%27Set-PSReadLineOption+-HistorySavePath+%24HistorySaveLocalPath%27%0D%0A%09Add-IfNotExists+%24profilePath+%27Set-PSReadLineOption+-PredictionViewStyle+ListView+%27%0D%0A%09Add-IfNotExists+%24profilePath+%27Set-PSReadLineOption+-Colors+%24StyleColors++%27%0D%0A%09Add-IfNotExists+%24profilePath+%27clear-host%27%0D%0A%09Add-IfNotExists+%24profilePath+%27oh-my-posh+init+pwsh+%2D%2Dconfig+%24OhMyPoshThemesFile+%7C+Invoke-Expression%27%0D%0A%09Add-IfNotExists+%24profilePath+%27cls%27%0D%0A++++Write-Host+%22%E2%9C%85+Perfil+do+PowerShell+criado%2Fatualizado+com+sucesso.%22++-ForegroundColor+Green%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+Falha+ao+criar+ou+atualizar+o+perfil+do+PowerShell.+Continuando...%22+-ForegroundColor+Red%0D%0A%7D%0D%0A%23+Defina+a+pol%C3%ADtica+de+execu%C3%A7%C3%A3o+como+Irrestrita+para+o+usu%C3%A1rio+atual%0D%0Atry+%7B%0D%0A++++Set-ExecutionPolicy+-ExecutionPolicy+Unrestricted+-Scope+CurrentUser+-Force%0D%0A++++Write-Host+%22%E2%9C%85+Pol%C3%ADtica+de+execu%C3%A7%C3%A3o+definida+como+Irrestrita.%22+-ForegroundColor+Green%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+Falha+ao+definir+a+pol%C3%ADtica+de+execu%C3%A7%C3%A3o.+Continuando...%22+-ForegroundColor+Red%0D%0A%7D%0D%0A%23+Baixe+o+tema+personalizado+do+Oh+My+Posh+se+o+Oh+My+Posh+estiver+instalado%0D%0Aif+%28Get-Command+oh-my-posh+-ErrorAction+SilentlyContinue%29+%7B%0D%0A++++try+%7B%0D%0A++++++++%24themePath+%3D+%22%24env%3ALOCALAPPDATA%5CPrograms%5Coh-my-posh%5Cthemes%5C%22%0D%0A++++++++Invoke-WebRequest+-Uri+%22https%3A%2F%2Fraw.githubusercontent.com%2FRtrevisan20%2FTampletesDelphi%2Fmaster%2FHardDev.omp.json%22+-OutFile+%24themePath%0D%0A++++++++Write-Host+%22%E2%9C%85+Tema+personalizado+baixado+com+sucesso.%22++-ForegroundColor+Green%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+Falha+ao+baixar+o+tema+personalizado.+Continuando...%22++-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+Oh+My+Posh+n%C3%A3o+encontrado%2C+pulando+o+download+do+tema.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%23+Instalar+%C3%ADcones+do+terminal%0D%0Atry+%7B%0D%0A++++Install-Module+-Name+Terminal-Icons+-Force%0D%0A++++Write-Host+%22%E2%9C%85+M%C3%B3dulo+de+%C3%ADcones+do+terminal+instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+Falha+ao+instalar+os+%C3%ADcones+do+Terminal.+Continuando...%22+-ForegroundColor+Red%0D%0A%7D%0D%0A%23+Instale+o+Git+%28necess%C3%A1rio+para+o+posh-git%29%0D%0Atry+%7B%0D%0A++++winget+install+-e+%2D%2Did+Git.Git+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsilent%0D%0A++++Write-Host+%22%E2%9C%85+Git+instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%E2%9D%8C+A+instala%C3%A7%C3%A3o+do+Git+falhou.+Continuando...%22+-ForegroundColor+Red%0D%0A%7D%0D%0A%23+Instale+o+posh-git+%28se+o+Git+estiver+instalado%29%0D%0Aif+%28Get-Command+git+-ErrorAction+SilentlyContinue%29+%7B%0D%0A++++try+%7B%0D%0A++++++++Install-Module+posh-git+-Scope+CurrentUser+-Force+%0D%0A++++++++Write-Host+%22%E2%9C%85+posh-git+instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+A+instala%C3%A7%C3%A3o+do+posh-git+falhou.+Continuando...%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+Git+n%C3%A3o+encontrado%2C+instala%C3%A7%C3%A3o+do+posh-git+ignorada.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3DINSTALA%C3%87%C3%83O+DO+APPS%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0Afunction+Install-App+%7B%0D%0A++++param+%28%0D%0A++++++++%5Bstring%5D%24AppId%2C%0D%0A++++++++%5Bstring%5D%24AppName%0D%0A++++%29%0D%0A++++try+%7B%0D%0A++++++++winget+install+-e+%2D%2Did+%24AppId+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsilent+%2D%2Dsource+winget%0D%0A++++++++Write-Host+%22%E2%9C%85+%24AppName+Instalado+com+sucesso.%22+-ForegroundColor+Green%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+%24AppName+a+instala%C3%A7%C3%A3o+falhou.+Continuando...%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D%0D%0A%23+Lista+de+aplicaciones+a+instalar%0D%0A%24apps+%3D+%40%28%0D%0A++++%40%7B+id+%3D+%22AnyDeskSoftwareGmbH.AnyDesk%22%3B+name+%3D+%22AnyDesk%22+%7D%2C%0D%0A++++%23%40%7B+id+%3D+%22Microsoft.PowerToys%22%3B+name+%3D+%22PowerToys%22+%7D%2C%0D%0A%09%23%40%7B+id+%3D+%22Mobatek.MobaXterm%22%3B+name+%3D+%22MobaXterm%22+%7D%2C%0D%0A++++%23%40%7B+id+%3D+%22Microsoft.VisualStudioCode%22%3B+name+%3D+%22Visual+Studio+Code%22+%7D%2C%0D%0A%09%40%7Bid+%3D+%22Google.Chrome%22%3B+name+%3D+%22Google+Chrome%22%7D%2C%0D%0A%09%40%7Bid+%3D+%22Notepad%2B%2B.Notepad%2B%2B%22%3B+name+%3D+%22Notepad%2B%2B%22%7D%2C%0D%0A%09%40%7Bid+%3D+%22Microsoft.Teams%22%3B+name+%3D+%22Teams%22%7D%2C%0D%0A%09%40%7Bid+%3D+%22PuTTY.PuTTY%22%3B+name+%3D+%22PuTTY%22%7D%2C%0D%0A%09%40%7Bid+%3D+%22Skillbrains.Lightshot%22%3B+name+%3D+%22Lightshot%22%7D%2C%0D%0A++++%40%7B+id+%3D+%227zip.7zip%22%3B+name+%3D+%227zip%22+%7D%0D%0A%29%0D%0A%23+Instalar+todas+las+aplicaciones%0D%0Aforeach+%28%24app+in+%24apps%29+%7B%0D%0A++++Install-App+-AppId+%24app.id+-AppName+%24app.name%0D%0A%7D%0D%0A%23+Update+PowerShell+Help%0D%0Aif+%28-not+%28Get-Help+-ErrorAction+SilentlyContinue%29%29+%7B%0D%0A++++try+%7B%0D%0A++++++++Update-Help%0D%0A++++++++Write-Host+%22%E2%9C%85+A+Ajuda+do+PowerShell+foi+atualizada+com+sucesso.%22+-ForegroundColor+Green%0D%0A++++%7D+catch+%7B%0D%0A++++++++Write-Host+%22%E2%9D%8C+Falha+ao+atualizar+a+Ajuda+do+PowerShell.+Continuando...%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+A+Ajuda+do+PowerShell+j%C3%A1+foi+atualizada.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+Define+o+diret%C3%B3rio+atual+do+script%0D%0A++Write-Host+%22%F0%9F%9A%80+Instalando+programas+adicionais...%22+-ForegroundColor+Yellow%0D%0A%24pastaAtual+%3D+%22C%3A%5CInstallers%5C%22%0D%0A%23+Busca+todos+os+arquivos+.exe+e+.msi+na+pasta%0D%0AGet-ChildItem+-Path+%24pastaAtual+-Filter+*.exe%2C+*.msi+%7C+ForEach-Object+%7B%0D%0A++++Write-Host+%22%F0%9F%9A%80+Instalando%3A+%24%28%24_.Name%29...%22+-ForegroundColor+Cyan%0D%0A++++%0D%0A++++%23+Executa+o+instalador+de+forma+silenciosa+e+aguarda+o+t%C3%A9rmino%0D%0A++++Start-Process+-FilePath+%24_.FullName+-ArgumentList+%22%2FS+%2Fqn+%2Fnorestart%22+-Wait+-NoNewWindow%0D%0A%7D%0D%0AWrite-Host+%22%E2%9C%85+Todas+as+instala%C3%A7%C3%B5es+foram+conclu%C3%ADdas%21%22+-ForegroundColor+Green%0D%0A%0D%0A%0D%0A%0D%0AWrite-Host+%22Execu%C3%A7%C3%A3o+do+script+conclu%C3%ADda%21%22+-ForegroundColor+Green&FirstLogonScriptType0=Ps1&FirstLogonScript1=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27sources%5Csxs%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Enable-WindowsOptionalFeature+-Online+-FeatureName+%27NetFx3%27+-Source+%24found+-NoRestart%3B%0D%0A++++++++retornar%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27N%C3%A3o+foi+poss%C3%ADvel+encontrar+nenhum+arquivo+que+corresponda+ao+padr%C3%A3o.%27+%7C+Write-Warning%3B&FirstLogonScriptType1=Ps1&AppLockerMode=Skip-->
+	<settings pass="offlineServicing"></settings>
+	<settings pass="windowsPE">
+		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UILanguage>pt-BR</UILanguage>
+		</component>
+		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UserData>
+				<ProductKey>
+					<Key>VK7JG-NPHTM-C97JM-9MPGT-3V66T</Key>
+					<WillShowUI>OnError</WillShowUI>
+				</ProductKey>
+				<AcceptEula>true</AcceptEula>
+			</UserData>
+			<UseConfigurationSet>false</UseConfigurationSet>
+			<RunSynchronous>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_DWORD /d 1 /f</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>2</Order>
+					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassSecureBootCheck /t REG_DWORD /d 1 /f</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>3</Order>
+					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_DWORD /d 1 /f</Path>
+				</RunSynchronousCommand>
+			</RunSynchronous>
+		</component>
+	</settings>
+	<settings pass="generalize"></settings>
+	<settings pass="specialize">
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<ComputerName>HardDev-Not</ComputerName>
+		</component>
+		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<RunSynchronous>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>2</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>3</Order>
+					<Path>reg.exe load "HKU\DefaultUser" "C:\Users\Default\NTUSER.DAT"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>4</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>5</Order>
+					<Path>reg.exe unload "HKU\DefaultUser"</Path>
+				</RunSynchronousCommand>
+			</RunSynchronous>
+		</component>
+	</settings>
+	<settings pass="auditSystem"></settings>
+	<settings pass="auditUser"></settings>
+	<settings pass="oobeSystem">
+		<component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<InputLocale>0416:00010416</InputLocale>
+			<SystemLocale>pt-BR</SystemLocale>
+			<UILanguage>pt-BR</UILanguage>
+			<UserLocale>pt-BR</UserLocale>
+		</component>
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UserAccounts>
+				<LocalAccounts>
+					<LocalAccount wcm:action="add">
+						<Name>HardDev</Name>
+						<DisplayName></DisplayName>
+						<Group>Administrators</Group>
+						<Password>
+							<Value></Value>
+							<PlainText>true</PlainText>
+						</Password>
+					</LocalAccount>
+				</LocalAccounts>
+			</UserAccounts>
+			<AutoLogon>
+				<Username>HardDev</Username>
+				<Enabled>true</Enabled>
+				<LogonCount>1</LogonCount>
+				<Password>
+					<Value></Value>
+					<PlainText>true</PlainText>
+				</Password>
+			</AutoLogon>
+			<OOBE>
+				<ProtectYourPC>3</ProtectYourPC>
+				<HideEULAPage>true</HideEULAPage>
+				<HideOnlineAccountScreens>false</HideOnlineAccountScreens>
+			</OOBE>
+			<FirstLogonCommands>
+				<SynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<CommandLine>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
+				</SynchronousCommand>
+			</FirstLogonCommands>
+		</component>
+	</settings>
+	<Extensions xmlns="https://schneegans.de/windows/unattend-generator/">
+		<Build>
+			<Commit>
+				<Hash>3de37dc6bc9bb1f63aeac7aa137c84c1b30b3b28</Hash>
+				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/3de37dc6bc9bb1f63aeac7aa137c84c1b30b3b28</GitHubUrl>
+			</Commit>
+		</Build>
+		<ExtractScript>
+param(
+    [xml] $Document
+);
+
+foreach( $file in $Document.unattend.Extensions.File ) {
+    $path = [System.Environment]::ExpandEnvironmentVariables( $file.GetAttribute( 'path' ) );
+    mkdir -Path( $path | Split-Path -Parent ) -ErrorAction 'SilentlyContinue';
+    $encoding = switch( [System.IO.Path]::GetExtension( $path ) ) {
+        { $_ -in '.ps1', '.xml' } { [System.Text.Encoding]::UTF8; }
+        { $_ -in '.reg', '.vbs', '.js' } { [System.Text.UnicodeEncoding]::new( $false, $true ); }
+        default { [System.Text.Encoding]::Default; }
+    };
+    $bytes = $encoding.GetPreamble() + $encoding.GetBytes( $file.InnerText.Trim() );
+    [System.IO.File]::WriteAllBytes( $path, $bytes );
+}
+		</ExtractScript>
+		<File path="C:\Windows\Setup\Scripts\RemovePackages.ps1">
+$selectors = @(
+	'Microsoft.Microsoft3DViewer';
+	'Microsoft.BingSearch';
+	'Clipchamp.Clipchamp';
+	'Microsoft.Copilot';
+	'Microsoft.549981C3F5F10';
+	'Microsoft.Windows.DevHome';
+	'MicrosoftCorporationII.MicrosoftFamily';
+	'Microsoft.WindowsFeedbackHub';
+	'Microsoft.Edge.GameAssist';
+	'Microsoft.GetHelp';
+	'Microsoft.Getstarted';
+	'microsoft.windowscommunicationsapps';
+	'Microsoft.WindowsMaps';
+	'Microsoft.MixedReality.Portal';
+	'Microsoft.BingNews';
+	'Microsoft.MicrosoftOfficeHub';
+	'Microsoft.Office.OneNote';
+	'Microsoft.OutlookForWindows';
+	'Microsoft.MSPaint';
+	'Microsoft.People';
+	'Microsoft.PowerAutomateDesktop';
+	'MicrosoftCorporationII.QuickAssist';
+	'Microsoft.SkypeApp';
+	'Microsoft.ScreenSketch';
+	'Microsoft.MicrosoftSolitaireCollection';
+	'Microsoft.MicrosoftStickyNotes';
+	'Microsoft.WindowsStore';
+	'Microsoft.StorePurchaseApp';
+	'MicrosoftTeams';
+	'MSTeams';
+	'Microsoft.Todos';
+	'Microsoft.WindowsSoundRecorder';
+	'Microsoft.Wallet';
+	'Microsoft.BingWeather';
+	'Microsoft.Xbox.TCUI';
+	'Microsoft.XboxApp';
+	'Microsoft.XboxGameOverlay';
+	'Microsoft.XboxGamingOverlay';
+	'Microsoft.XboxIdentityProvider';
+	'Microsoft.XboxSpeechToTextOverlay';
+	'Microsoft.GamingApp';
+	'Microsoft.YourPhone';
+	'Microsoft.ZuneVideo';
+);
+$getCommand = {
+  Get-AppxProvisionedPackage -Online;
+};
+$filterCommand = {
+  $_.DisplayName -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Remove-AppxProvisionedPackage -AllUsers -Online -ErrorAction 'Continue';
+  }
+};
+$type = 'Package';
+$logfile = 'C:\Windows\Setup\Scripts\RemovePackages.log';
+&amp; {
+	$installed = &amp; $getCommand;
+	foreach( $selector in $selectors ) {
+		$result = [ordered] @{
+			Selector = $selector;
+		};
+		$found = $installed | Where-Object -FilterScript $filterCommand;
+		if( $found ) {
+			$result.Output = $found | &amp; $removeCommand;
+			if( $? ) {
+				$result.Message = "$type removed.";
+			} else {
+				$result.Message = "$type not removed.";
+				$result.Error = $Error[0];
+			}
+		} else {
+			$result.Message = "$type not installed.";
+		}
+		$result | ConvertTo-Json -Depth 3 -Compress;
+	}
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\RemoveCapabilities.ps1">
+$selectors = @(
+	'Print.Fax.Scan';
+	'Language.Handwriting';
+	'Browser.InternetExplorer';
+	'MathRecognizer';
+	'OneCoreUAP.OneSync';
+	'OpenSSH.Client';
+	'Microsoft.Windows.PowerShell.ISE';
+	'App.Support.QuickAssist';
+	'Microsoft.Windows.SnippingTool';
+	'Language.Speech';
+	'Language.TextToSpeech';
+	'App.StepsRecorder';
+	'Hello.Face.18967';
+	'Hello.Face.Migration.18967';
+	'Hello.Face.20134';
+	'Media.WindowsMediaPlayer';
+);
+$getCommand = {
+  Get-WindowsCapability -Online | Where-Object -Property 'State' -NotIn -Value @(
+    'NotPresent';
+    'Removed';
+  );
+};
+$filterCommand = {
+  ($_.Name -split '~')[0] -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Remove-WindowsCapability -Online -ErrorAction 'Continue';
+  }
+};
+$type = 'Capability';
+$logfile = 'C:\Windows\Setup\Scripts\RemoveCapabilities.log';
+&amp; {
+	$installed = &amp; $getCommand;
+	foreach( $selector in $selectors ) {
+		$result = [ordered] @{
+			Selector = $selector;
+		};
+		$found = $installed | Where-Object -FilterScript $filterCommand;
+		if( $found ) {
+			$result.Output = $found | &amp; $removeCommand;
+			if( $? ) {
+				$result.Message = "$type removed.";
+			} else {
+				$result.Message = "$type not removed.";
+				$result.Error = $Error[0];
+			}
+		} else {
+			$result.Message = "$type not installed.";
+		}
+		$result | ConvertTo-Json -Depth 3 -Compress;
+	}
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\RemoveFeatures.ps1">
+$selectors = @(
+	'MediaPlayback';
+	'Microsoft-RemoteDesktopConnection';
+	'Recall';
+	'Microsoft-SnippingTool';
+);
+$getCommand = {
+  Get-WindowsOptionalFeature -Online | Where-Object -Property 'State' -NotIn -Value @(
+    'Disabled';
+    'DisabledWithPayloadRemoved';
+  );
+};
+$filterCommand = {
+  $_.FeatureName -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Disable-WindowsOptionalFeature -Online -Remove -NoRestart -ErrorAction 'Continue';
+  }
+};
+$type = 'Feature';
+$logfile = 'C:\Windows\Setup\Scripts\RemoveFeatures.log';
+&amp; {
+	$installed = &amp; $getCommand;
+	foreach( $selector in $selectors ) {
+		$result = [ordered] @{
+			Selector = $selector;
+		};
+		$found = $installed | Where-Object -FilterScript $filterCommand;
+		if( $found ) {
+			$result.Output = $found | &amp; $removeCommand;
+			if( $? ) {
+				$result.Message = "$type removed.";
+			} else {
+				$result.Message = "$type not removed.";
+				$result.Error = $Error[0];
+			}
+		} else {
+			$result.Message = "$type not installed.";
+		}
+		$result | ConvertTo-Json -Depth 3 -Compress;
+	}
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; $logfile;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\Wifi.xml">
+&lt;WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"&gt;
+	&lt;name&gt;HardDev&lt;/name&gt;
+	&lt;SSIDConfig&gt;
+		&lt;SSID&gt;
+			&lt;hex&gt;48617264446576&lt;/hex&gt;
+			&lt;name&gt;HardDev&lt;/name&gt;
+		&lt;/SSID&gt;
+	&lt;/SSIDConfig&gt;
+	&lt;connectionType&gt;ESS&lt;/connectionType&gt;
+	&lt;connectionMode&gt;auto&lt;/connectionMode&gt;
+	&lt;MSM&gt;
+		&lt;security&gt;
+			&lt;authEncryption&gt;
+				&lt;authentication&gt;WPA2PSK&lt;/authentication&gt;
+				&lt;encryption&gt;AES&lt;/encryption&gt;
+				&lt;useOneX&gt;false&lt;/useOneX&gt;
+			&lt;/authEncryption&gt;
+			&lt;sharedKey&gt;
+				&lt;keyType&gt;passPhrase&lt;/keyType&gt;
+				&lt;protected&gt;false&lt;/protected&gt;
+				&lt;keyMaterial&gt;Masterkey150711&lt;/keyMaterial&gt;
+			&lt;/sharedKey&gt;
+		&lt;/security&gt;
+	&lt;/MSM&gt;
+&lt;/WLANProfile&gt;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\TaskbarLayoutModification.xml">
+&lt;LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" Version="1"&gt;
+	&lt;CustomTaskbarLayoutCollection PinListPlacement="Replace"&gt;
+		&lt;defaultlayout:TaskbarLayout&gt;
+			&lt;taskbar:TaskbarPinList&gt;
+				&lt;taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" /&gt;
+			&lt;/taskbar:TaskbarPinList&gt;
+		&lt;/defaultlayout:TaskbarLayout&gt;
+	&lt;/CustomTaskbarLayoutCollection&gt;
+&lt;/LayoutModificationTemplate&gt;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\UnlockStartLayout.vbs">
+HKU = &amp;H80000003
+Set reg = GetObject("winmgmts://./root/default:StdRegProv")
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+If reg.EnumKey(HKU, "", sids) = 0 Then
+	If Not IsNull(sids) Then
+		For Each sid In sids
+			key = sid + "\Software\Policies\Microsoft\Windows\Explorer"
+			name = "LockedStartLayout"
+			If reg.GetDWORDValue(HKU, key, name, existing) = 0 Then
+				reg.SetDWORDValue HKU, key, name, 0
+			End If
+		Next
+	End If
+End If
+		</File>
+		<File path="C:\Windows\Setup\Scripts\UnlockStartLayout.xml">
+&lt;Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"&gt;
+	&lt;Triggers&gt;
+		&lt;EventTrigger&gt;
+			&lt;Enabled&gt;true&lt;/Enabled&gt;
+			&lt;Subscription&gt;&amp;lt;QueryList&amp;gt;&amp;lt;Query Id="0" Path="Application"&amp;gt;&amp;lt;Select Path="Application"&amp;gt;*[System[Provider[@Name='UnattendGenerator'] and EventID=1]]&amp;lt;/Select&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;/QueryList&amp;gt;&lt;/Subscription&gt;
+		&lt;/EventTrigger&gt;
+	&lt;/Triggers&gt;
+	&lt;Principals&gt;
+		&lt;Principal id="Author"&gt;
+			&lt;UserId&gt;S-1-5-18&lt;/UserId&gt;
+			&lt;RunLevel&gt;LeastPrivilege&lt;/RunLevel&gt;
+		&lt;/Principal&gt;
+	&lt;/Principals&gt;
+	&lt;Settings&gt;
+		&lt;MultipleInstancesPolicy&gt;IgnoreNew&lt;/MultipleInstancesPolicy&gt;
+		&lt;DisallowStartIfOnBatteries&gt;false&lt;/DisallowStartIfOnBatteries&gt;
+		&lt;StopIfGoingOnBatteries&gt;false&lt;/StopIfGoingOnBatteries&gt;
+		&lt;AllowHardTerminate&gt;true&lt;/AllowHardTerminate&gt;
+		&lt;StartWhenAvailable&gt;false&lt;/StartWhenAvailable&gt;
+		&lt;RunOnlyIfNetworkAvailable&gt;false&lt;/RunOnlyIfNetworkAvailable&gt;
+		&lt;IdleSettings&gt;
+			&lt;StopOnIdleEnd&gt;true&lt;/StopOnIdleEnd&gt;
+			&lt;RestartOnIdle&gt;false&lt;/RestartOnIdle&gt;
+		&lt;/IdleSettings&gt;
+		&lt;AllowStartOnDemand&gt;true&lt;/AllowStartOnDemand&gt;
+		&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;Hidden&gt;false&lt;/Hidden&gt;
+		&lt;RunOnlyIfIdle&gt;false&lt;/RunOnlyIfIdle&gt;
+		&lt;WakeToRun&gt;false&lt;/WakeToRun&gt;
+		&lt;ExecutionTimeLimit&gt;PT72H&lt;/ExecutionTimeLimit&gt;
+		&lt;Priority&gt;7&lt;/Priority&gt;
+	&lt;/Settings&gt;
+	&lt;Actions Context="Author"&gt;
+		&lt;Exec&gt;
+			&lt;Command&gt;C:\Windows\System32\wscript.exe&lt;/Command&gt;
+			&lt;Arguments&gt;C:\Windows\Setup\Scripts\UnlockStartLayout.vbs&lt;/Arguments&gt;
+		&lt;/Exec&gt;
+	&lt;/Actions&gt;
+&lt;/Task&gt;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\MoveActiveHours.xml">
+&lt;Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"&gt;
+	&lt;Triggers&gt;
+		&lt;BootTrigger&gt;
+			&lt;Repetition&gt;
+				&lt;Interval&gt;PT4H&lt;/Interval&gt;
+				&lt;StopAtDurationEnd&gt;false&lt;/StopAtDurationEnd&gt;
+			&lt;/Repetition&gt;
+			&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;/BootTrigger&gt;
+		&lt;RegistrationTrigger&gt;
+			&lt;Repetition&gt;
+				&lt;Interval&gt;PT4H&lt;/Interval&gt;
+				&lt;StopAtDurationEnd&gt;false&lt;/StopAtDurationEnd&gt;
+			&lt;/Repetition&gt;
+			&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;/RegistrationTrigger&gt;
+	&lt;/Triggers&gt;
+	&lt;Principals&gt;
+		&lt;Principal id="Author"&gt;
+			&lt;UserId&gt;S-1-5-19&lt;/UserId&gt;
+			&lt;RunLevel&gt;LeastPrivilege&lt;/RunLevel&gt;
+		&lt;/Principal&gt;
+	&lt;/Principals&gt;
+	&lt;Settings&gt;
+		&lt;MultipleInstancesPolicy&gt;IgnoreNew&lt;/MultipleInstancesPolicy&gt;
+		&lt;DisallowStartIfOnBatteries&gt;false&lt;/DisallowStartIfOnBatteries&gt;
+		&lt;StopIfGoingOnBatteries&gt;false&lt;/StopIfGoingOnBatteries&gt;
+		&lt;AllowHardTerminate&gt;true&lt;/AllowHardTerminate&gt;
+		&lt;StartWhenAvailable&gt;false&lt;/StartWhenAvailable&gt;
+		&lt;RunOnlyIfNetworkAvailable&gt;false&lt;/RunOnlyIfNetworkAvailable&gt;
+		&lt;IdleSettings&gt;
+			&lt;StopOnIdleEnd&gt;true&lt;/StopOnIdleEnd&gt;
+			&lt;RestartOnIdle&gt;false&lt;/RestartOnIdle&gt;
+		&lt;/IdleSettings&gt;
+		&lt;AllowStartOnDemand&gt;true&lt;/AllowStartOnDemand&gt;
+		&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;Hidden&gt;false&lt;/Hidden&gt;
+		&lt;RunOnlyIfIdle&gt;false&lt;/RunOnlyIfIdle&gt;
+		&lt;WakeToRun&gt;false&lt;/WakeToRun&gt;
+		&lt;ExecutionTimeLimit&gt;PT72H&lt;/ExecutionTimeLimit&gt;
+		&lt;Priority&gt;7&lt;/Priority&gt;
+	&lt;/Settings&gt;
+	&lt;Actions Context="Author"&gt;
+		&lt;Exec&gt;
+			&lt;Command&gt;%windir%\System32\conhost.exe&lt;/Command&gt;
+			&lt;Arguments&gt;--headless %windir%\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -NoProfile -NonInteractive -Command "$p = @{ LiteralPath = 'Registry::HKLM\Software\Microsoft\WindowsUpdate\UX\Settings'; Type = 'DWord'; }; $h = [datetime]::Now.Hour; Set-ItemProperty @p -Name 'ActiveHoursStart' -Value (($h + 23) % 24); Set-ItemProperty @p -Name 'ActiveHoursEnd' -Value (($h + 11) % 24); Set-ItemProperty @p -Name 'SmartActiveHoursState' -Value 0;"&lt;/Arguments&gt;
+		&lt;/Exec&gt;
+	&lt;/Actions&gt;
+&lt;/Task&gt;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\TurnOffSystemSounds.ps1">
+$excludes = Get-ChildItem -LiteralPath 'Registry::HKU\DefaultUser\AppEvents\EventLabels' |
+    Where-Object -FilterScript { ($_ | Get-ItemProperty).ExcludeFromCPL -eq 1; } |
+    Select-Object -ExpandProperty 'PSChildName';
+Get-ChildItem -Path 'Registry::HKU\DefaultUser\AppEvents\Schemes\Apps\*\*' |
+    Where-Object -Property 'PSChildName' -NotIn $excludes |
+    Get-ChildItem -Include '.Current' | Set-ItemProperty -Name '(Default)' -Value '';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\MakeEdgeUninstallable.ps1">
+$ErrorActionPreference = 'Stop';
+&amp; {
+	try {
+		$params = @{
+			LiteralPath = 'C:\Windows\System32\IntegratedServicesRegionPolicySet.json';
+			Encoding = 'Utf8';
+		};
+		$o = Get-Content @params | ConvertFrom-Json;
+		$o.policies | ForEach-Object -Process {
+			if( $_.guid -eq '{1bca278a-5d11-4acf-ad2f-f9ab6d7f93a6}' ) {
+				$_.defaultState = 'enabled';
+			}
+		};
+		$o | ConvertTo-Json -Depth 9 | Out-File @params;
+	} catch {
+		$_;
+	}
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; 'C:\Windows\Setup\Scripts\MakeEdgeUninstallable.log';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\SetStartPins.ps1">
+$json = '{
+  "pinnedList": [
+    {
+      "desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"
+    }
+  ]
+}';
+if( [System.Environment]::OSVersion.Version.Build -lt 20000 ) {
+	return;
+}
+$key = 'Registry::HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start';
+New-Item -Path $key -ItemType 'Directory' -ErrorAction 'SilentlyContinue';
+Set-ItemProperty -LiteralPath $key -Name 'ConfigureStartPins' -Value $json -Type 'String';
+		</File>
+		<File path="C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml">
+&lt;LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"&gt;
+	&lt;LayoutOptions StartTileGroupCellWidth="6" /&gt;
+	&lt;DefaultLayoutOverride&gt;
+		&lt;StartLayoutCollection&gt;
+			&lt;StartLayout GroupCellWidth="6" xmlns="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" /&gt;
+		&lt;/StartLayoutCollection&gt;
+	&lt;/DefaultLayoutOverride&gt;
+&lt;/LayoutModificationTemplate&gt;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\SetColorTheme.ps1">
+$lightThemeSystem = 0;
+$lightThemeApps = 0;
+$accentColorOnStart = 0;
+$enableTransparency = 0;
+$htmlAccentColor = '#D0000C';
+&amp; {
+	$params = @{
+		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize';
+		Force = $true;
+		Type = 'DWord';
+	};
+	Set-ItemProperty @params -Name 'SystemUsesLightTheme' -Value $lightThemeSystem;
+	Set-ItemProperty @params -Name 'AppsUseLightTheme' -Value $lightThemeApps;
+	Set-ItemProperty @params -Name 'ColorPrevalence' -Value $accentColorOnStart;
+	Set-ItemProperty @params -Name 'EnableTransparency' -Value $enableTransparency;
+};
+&amp; {
+	Add-Type -AssemblyName 'System.Drawing';
+	$accentColor = [System.Drawing.ColorTranslator]::FromHtml( $htmlAccentColor );
+
+	function ConvertTo-DWord {
+		param(
+			[System.Drawing.Color]
+			$Color
+		);
+						
+		[byte[]] $bytes = @(
+			$Color.R;
+			$Color.G;
+			$Color.B;
+			$Color.A;
+		);
+		return [System.BitConverter]::ToUInt32( $bytes, 0); 
+	}
+
+	$startColor = [System.Drawing.Color]::FromArgb( 0xD2, $accentColor );
+	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent' -Name 'StartColorMenu' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
+	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent' -Name 'AccentColorMenu' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
+	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\DWM' -Name 'AccentColor' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
+	$params = @{
+		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent';
+		Name = 'AccentPalette';
+	};
+	$palette = Get-ItemPropertyValue @params;
+	$index = 20;
+	$palette[ $index++ ] = $accentColor.R;
+	$palette[ $index++ ] = $accentColor.G;
+	$palette[ $index++ ] = $accentColor.B;
+	$palette[ $index++ ] = $accentColor.A;
+	Set-ItemProperty @params -Value $palette -Type 'Binary' -Force;
+};
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-01.ps1">
+Set-Volume -DriveLetter 'C' -NewFileSystemLabel 'Sistema';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-02.ps1">
+$uri = [uri]::new( 'https://aka.ms/vs/17/release/vc_redist.x64.exe' );
+$file = "$env:TEMP\{0}" -f $uri.Segments[-1];
+[System.Net.WebClient]::new().DownloadFile( $uri, $file );
+Iniciar-Processo -CaminhoArquivo $arquivo -ListaDeArgumentos '/quieto /semreiniciar' -Aguardar;
+Remover-Item -LiteralPath $arquivo -A&#xE7;&#xE3;oDeErro 'ContinuarSilenciosamente';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-03.ps1">
+# Este script foi projetado para ser executado ap&#xF3;s uma instala&#xE7;&#xE3;o limpa do Windows ou formata&#xE7;&#xE3;o. Ele instala programas essenciais e o que pode ser a melhor configura&#xE7;&#xE3;o de shell j&#xE1; criada: ProcrastinateShell.
+# Para execut&#xE1;-lo a partir do sistema, temos duas op&#xE7;&#xF5;es: remover a restri&#xE7;&#xE3;o de acesso &#xE0; internet e, em seguida, alterar a pol&#xED;tica para o usu&#xE1;rio atual ou ignorar o script.
+# Unblock-File -Path .\setup.ps1
+# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+# ou use para execut&#xE1;-lo sem alterar a pol&#xED;tica
+# powershell -ExecutionPolicy Bypass -File .\setup.ps1
+
+# Fun&#xE7;&#xE3;o para verificar se o script est&#xE1; sendo executado como administrador
+
+$scriptName = "SetupNot.ps1";
+
+function Test-Admin {
+    $currentIdentity = [Security.Principal.WindowsIdentity]::GetCurrent()
+    $principal = New-Object Security.Principal.WindowsPrincipal($currentIdentity)
+    return $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+}
+# Verificar permiss&#xF5;es elevadas
+if (-not (Test-Admin)) {
+    Write-Host "Este script requer privil&#xE9;gios elevados (Administrador). Execute-o como Administrador." -ForegroundColor Red
+    exit
+}
+# 1. Obtenha informa&#xE7;&#xF5;es sobre a vers&#xE3;o mais recente.
+$repo = "microsoft/winget-cli"
+$urlApi = "https://api.github.com/repos/$repo/releases/latest"
+try {
+    Write-Host "&#x1F680; Consultando ultima vers&#xE3;o do winget..." -ForegroundColor Cyan
+    $latestRelease = Invoke-RestMethod -Uri $urlApi
+    $latestVersionTag = $latestRelease.tag_name.Replace('v', '').Trim()
+    $requiredVersion = [version]$latestVersionTag
+    $downloadUrl = ($latestRelease.assets | Where-Object { $_.name -like "*.msixbundle" }).browser_download_url | Select-Object -First 1
+
+    # 2. Verifique a vers&#xE3;o atual
+    $currentVersion = [version]"0.0.0.0"
+    if (Get-Command winget -ErrorAction SilentlyContinue) {
+        $currentVersion = [version](winget -v).Replace('v', '').Trim()
+    }
+
+    if ($currentVersion -ge $requiredVersion) {
+        Write-Host "&#x2705; Winget est&#xE1; atualizado ($currentVersion)." -ForegroundColor Green
+    } else {
+        Write-Host "&#x1F680; Atualizando de $currentVersion a $requiredVersion..." -ForegroundColor Yellow
+        $destination = "$env:USERPROFILE\Downloads\Winget_Update.msixbundle"
+        Invoke-WebRequest -Uri $downloadUrl -OutFile $destination
+
+       # --- AQUI EST&#xC1; A SOLU&#xC7;&#xC3;O PARA O ERRO 0x80073D02 ---
+        Write-Host "&#x1F680; Ecerrando processos bloquedos..." -ForegroundColor Yellow
+        
+		# Encerramos qualquer inst&#xE2;ncia do Winget ou do instalador
+        Get-Process -Name "WinGet", "AppInstaller" -ErrorAction SilentlyContinue | Stop-Process -Force
+        Start-Sleep -Seconds 2 # Estamos dando um descanso ao sistema.
+        Write-Host "&#x1F680; Instalando pacote (for&#xE7;ando o encerramento do aplicativo)..."  -ForegroundColor Yellow
+        
+		# Usamos o par&#xE2;metro -ForceApplicationShutdown para fazer com que o pr&#xF3;prio Windows tente fechar tudo o que estiver interferindo.
+        Add-AppxPackage -Path $destination -ForceApplicationShutdown -ErrorAction Stop
+        Write-Host "&#x2705; Feito! Winget atualizado para a vers&#xE3;o $requiredVersion." -ForegroundColor Green
+        Remove-Item $destination -ErrorAction SilentlyContinue
+    }
+} catch {
+    Write-Host "&#x274C; Error: $_" -ForegroundColor Red
+    Write-Host "&#x1F680; Observa&#xE7;&#xE3;o: Certifique-se de executar o PowerShell como ADMINISTRADOR.." -ForegroundColor Yellow
+}
+
+# Function to check if PowerShell 7+ is running
+function Is-PowerShell7 {
+    return $PSVersionTable.PSVersion.Major -ge 7
+}
+# Certifique-se de que estamos executando o PowerShell 7; caso contr&#xE1;rio, instale-o e saia do script.
+if (-not (Is-PowerShell7)) {
+    Write-Host "&#x1F680; &#xC9; necess&#xE1;rio o PowerShell 7 ou superior. Instalando o PowerShell 7..."  -ForegroundColor Yellow
+    try {
+        winget install --id Microsoft.Powershell --source winget --accept-package-agreements --accept-source-agreements --silent
+        Write-Host "&#x2705; PowerShell 7 Instalado com sucesso." -ForegroundColor Green
+        Write-Host "&#x2705; Continue no PowerShell 7." -ForegroundColor Green
+        Start-Sleep -Seconds 2
+        # Mudando para o PowerShell 7.
+        $desktopPath = [System.IO.Path]::Combine($env:USERPROFILE, "Desktop",  $scriptName)
+        Start-Process "pwsh" -ArgumentList "-NoProfile -NoExit -File `"$desktopPath`""
+        exit
+    } catch {
+        Write-Host "&#x274C; A instala&#xE7;&#xE3;o do PowerShell 7 falhou. Encerrando o script." -ForegroundColor Red
+        exit
+    }
+} else {
+    Write-Host "&#x1F680; O PowerShell 7 j&#xE1; est&#xE1; em execu&#xE7;&#xE3;o." -ForegroundColor Yellow
+}
+
+# Verifique e instale o Terminal do Windows, caso ainda n&#xE3;o esteja instalado.
+if (-not (Get-Command wt -ErrorAction SilentlyContinue)) {
+    Write-Host "Terminal do Windows n&#xE3;o encontrado, instalando..." -ForegroundColor Gray
+    try {
+        winget install --id Microsoft.WindowsTerminal -e --accept-package-agreements --accept-source-agreements --silent
+        Write-Host "&#x2705; O Terminal do Windows foi instalado com sucesso." -ForegroundColor Green
+    } catch {
+        Write-Host "&#x274C; A instala&#xE7;&#xE3;o do Windows Terminal falhou. Saindo do script."  -ForegroundColor Red
+        exit
+    }
+} else {
+    Write-Host "&#x1F680; O Terminal do Windows j&#xE1; est&#xE1; instalado." -ForegroundColor Yellow
+}
+
+# Instale Oh My Posh
+if (-not (Get-Command oh-my-posh -ErrorAction SilentlyContinue)) {
+    try {
+        winget install JanDeDobbeleer.OhMyPosh -s winget --accept-package-agreements --accept-source-agreements --silent
+        Write-Host "&#x2705; Oh My Posh instalado com sucesso. Recarregar..." -ForegroundColor Green
+        Start-Sleep -Seconds 2
+        # Inicie outro PowerShell para carregar os comandos do Oh My Posh
+        $desktopPath = [System.IO.Path]::Combine($env:USERPROFILE, "Desktop",$scriptName)
+        Start-Process "pwsh" -ArgumentList "-NoProfile -File `"$desktopPath`""
+        Start-Sleep -Seconds 1
+        exit
+    } catch {
+        Write-Host "&#x274C; A instala&#xE7;&#xE3;o do Oh My Posh falhou. Continuando..." -ForegroundColor Red
+    }
+}
+# Define o caminho para a pasta de temas
+$ThemesDir = Join-Path  $env:LOCALAPPDATA "Programs\oh-my-posh\themes"
+# Cria a pasta se n&#xE3;o existir
+if (-not (Test-Path $ThemesDir)) {
+    New-Item -ItemType Directory -Path $ThemesDir | Out-Null
+    Write-Host "&#x2705; Pasta criada em: $ThemesDir" -ForegroundColor Green
+} else {
+    Write-Host "&#x1F680; A pasta j&#xE1; existe em: $ThemesDir" -ForegroundColor Yellow
+}
+# --- Fun&#xE7;&#xE3;o de detec&#xE7;&#xE3;o de fonte aprimorada ---
+function Is-FontInstalled {
+    param (
+        [string]$FontName
+    )
+    # Caminhos do registro onde o Windows armazena as fontes instaladas
+    $regPaths = @(
+        "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts",
+        "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\Fonts"
+    )
+    foreach ($path in $regPaths) {
+        if (Test-Path $path) {
+            # Verificamos se alguma propriedade do registro cont&#xE9;m o nome da fonte
+            $fonts = Get-ItemProperty -Path $path
+            if ($fonts.PSObject.Properties.Name -like "*$FontName*") {
+                return $true
+            }
+        }
+    }
+    return $false
+}
+
+# Instalar as fontes (se o OMP existir)
+if (Get-Command oh-my-posh -ErrorAction SilentlyContinue) {
+    $fuentes = @("Meslo", "MesloLG Nerd Font")
+    foreach ($f in $fuentes) {
+        if (-not (Is-FontInstalled -FontName "$f*Nerd Font")) {
+            Write-Host "&#x1F680; Instalando fonte $f..." -ForegroundColor Yellow
+            try {
+                # Usamos o nome que o oh-my-posh reconhece internamente
+                $nombreFuente = $f.ToLower()
+                oh-my-posh font install $nombreFuente
+                Write-Host "&#x2705; $f instalada corretamente." -ForegroundColor Green
+            } catch {
+                Write-Host "&#x274C; Erro ao instalar a fonte $f." -ForegroundColor Red
+            }
+        } else {
+            Write-Host "&#x1F680; A fonte $f j&#xE1; est&#xE1; instalada. Ignorando..." -ForegroundColor Yellow
+        }
+    }
+}
+
+# Obtenha o caminho do arquivo settings.json no Terminal do Windows
+$terminalSettingsPath = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+# Certifique-se de que o arquivo settings.json exista antes de tentar modific&#xE1;-lo.
+if (-not (Test-Path $terminalSettingsPath)) {
+    Write-Host "&#x274C; O arquivo Settings.json n&#xE3;o foi encontrado. Certifique-se de que o Terminal do Windows esteja instalado e executado pelo menos uma vez." -ForegroundColor Red
+    exit
+}
+# Leia o arquivo settings.json
+$settingsJson = Get-Content -Path $terminalSettingsPath -Raw | ConvertFrom-Json
+# Crie a se&#xE7;&#xE3;o 'defaults' se ela n&#xE3;o existir.
+if (-not $settingsJson.profiles.defaults) {
+    $settingsJson.profiles.defaults = @{}
+}
+# Crie a se&#xE7;&#xE3;o 'fonte' se ela n&#xE3;o existir.
+if (-not $settingsJson.profiles.defaults.font) {
+    $settingsJson.profiles.defaults | Add-Member -MemberType NoteProperty -Name "font" -Value @{}
+}
+$settingsJson.profiles.defaults.font.face = "MesloLGM Nerd Font"
+$settingsJson.profiles.defaults.font.size = 12
+# Salvar altera&#xE7;&#xF5;es em settings.json
+$settingsJson | ConvertTo-Json -Depth 100 | Set-Content -Path $terminalSettingsPath -Force
+Write-Host "&#x2705; O arquivo Settings.json foi atualizado com a fonte MesloLGM Nerd e os perfis." -ForegroundColor Green
+
+# Obtenha o caminho correto do perfil dependendo da vers&#xE3;o do PowerShell
+$profilePath = if (Is-PowerShell7) {
+    "$env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+} else {
+    "$env:USERPROFILE\Documents\WindowsPowerShell\profile.ps1"
+}
+# Criar e editar perfil do PowerShell
+try {
+    if (-not (Test-Path $profilePath)) {
+        New-Item -Path $profilePath -Type File -Force
+    }
+    $profileContent = Get-Content -Path $profilePath -Raw
+	function Add-IfNotExists($path, $content) {
+        if (-not ($profileContent -contains $content)) {
+            Add-Content -Path $path -Value $content
+        }
+    }
+	#Add-IfNotExists $profilePath '$HistorySaveLocalPath = "D:\Programas\PowerShell\ConsoleHost_history.txt"'	
+    Add-IfNotExists $profilePath '$OhMyPoshThemesFile   = "~/AppData/Local/Programs/oh-my-posh/themes/HardDev.omp.json"' 
+    #Add-IfNotExists $profilePath '$OhMyPoshThemesFile   = "D:\Programas\PowerShell\Styles\HardDev.omp.json"' 
+	Add-IfNotExists $profilePath '$StyleColors = @{'
+    Add-IfNotExists $profilePath '	"Command"                   	= "#EFFA78"'
+	Add-IfNotExists $profilePath '	"Comment"                    	= "#483C67"'
+	Add-IfNotExists $profilePath '	"ContinuationPrompt"   	= "#E1E1E6"'
+	Add-IfNotExists $profilePath '	"Default"                    		= "#E1E1E6"'
+	Add-IfNotExists $profilePath '	"Emphasis"                   	= "#c678dd"'
+	Add-IfNotExists $profilePath '	"Error"                      		= "#FF5555"'
+	Add-IfNotExists $profilePath '	"InlinePrediction"          	= "#4D4D4D"'
+	Add-IfNotExists $profilePath '	"Keyword"                    	= "#00008b"'
+	Add-IfNotExists $profilePath '	"ListPrediction"             	= "#98c379"'
+	Add-IfNotExists $profilePath '	"Member"                     	= "#E1E1E6"'
+	Add-IfNotExists $profilePath '	"Number"                     	= "#98c379"'
+	Add-IfNotExists $profilePath '	"Operator"                   	= "#757575"'
+	Add-IfNotExists $profilePath '	"Parameter"                  	= "#4D4D4D"'
+	Add-IfNotExists $profilePath '	"String"                     		= "#8D79BA"'
+	Add-IfNotExists $profilePath '	"Type"                       		= "#008080"'
+	Add-IfNotExists $profilePath '	"Variable"                   		= "#FF5555"'
+	Add-IfNotExists $profilePath '	"ListPredictionSelected"	= "#41414D"'
+	Add-IfNotExists $profilePath '	"Selection"                  		= "#41414D"}'
+	Add-IfNotExists $profilePath 'Import-Module -Name Terminal-Icons'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.FormatAccent	= $PSStyle.Foreground.FromRGB(0x008080)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.TableHeader      = $PSStyle.Foreground.FromRGB(0x483C67)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.ErrorAccent       = $PSStyle.Foreground.FromRGB(0xFF5555)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.Error              	= $PSStyle.Foreground.FromRGB(0xff2828)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.Warning            	= $PSStyle.Foreground.FromRGB(0xff9966)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.Verbose            	= $PSStyle.Foreground.FromRGB(0x008080)'
+	Add-IfNotExists $profilePath '$PSStyle.Formatting.Debug              	= $PSStyle.Foreground.FromRGB(0x4D4D4D)'
+	Add-IfNotExists $profilePath '$PSStyle.Progress.Style                		= $PSStyle.Foreground.FromRGB(0x41b15d)'
+	Add-IfNotExists $profilePath '$PSStyle.FileInfo.Directory            		= $PSStyle.Background.FromRGB(0xFF6E67)'
+	Add-IfNotExists $profilePath '$PSStyle.FileInfo.SymbolicLink         	= $PSStyle.Foreground.FromRGB(0x2f6aff)'
+	Add-IfNotExists $profilePath '$PSStyle.FileInfo.Executable           	= $PSStyle.Foreground.FromRGB(0xB8B80A)'
+	#Add-IfNotExists $profilePath 'Set-PSReadLineOption -HistorySavePath $HistorySaveLocalPath'
+	Add-IfNotExists $profilePath 'Set-PSReadLineOption -PredictionViewStyle ListView '
+	Add-IfNotExists $profilePath 'Set-PSReadLineOption -Colors $StyleColors  '
+	Add-IfNotExists $profilePath 'clear-host'
+	Add-IfNotExists $profilePath 'oh-my-posh init pwsh --config $OhMyPoshThemesFile | Invoke-Expression'
+	Add-IfNotExists $profilePath 'cls'
+    Write-Host "&#x2705; Perfil do PowerShell criado/atualizado com sucesso."  -ForegroundColor Green
+} catch {
+    Write-Host "&#x274C; Falha ao criar ou atualizar o perfil do PowerShell. Continuando..." -ForegroundColor Red
+}
+# Defina a pol&#xED;tica de execu&#xE7;&#xE3;o como Irrestrita para o usu&#xE1;rio atual
+try {
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+    Write-Host "&#x2705; Pol&#xED;tica de execu&#xE7;&#xE3;o definida como Irrestrita." -ForegroundColor Green
+} catch {
+    Write-Host "&#x274C; Falha ao definir a pol&#xED;tica de execu&#xE7;&#xE3;o. Continuando..." -ForegroundColor Red
+}
+# Baixe o tema personalizado do Oh My Posh se o Oh My Posh estiver instalado
+if (Get-Command oh-my-posh -ErrorAction SilentlyContinue) {
+    try {
+        $themePath = "$env:LOCALAPPDATA\Programs\oh-my-posh\themes\"
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Rtrevisan20/TampletesDelphi/master/HardDev.omp.json" -OutFile $themePath
+        Write-Host "&#x2705; Tema personalizado baixado com sucesso."  -ForegroundColor Green
+    } catch {
+        Write-Host "&#x274C; Falha ao baixar o tema personalizado. Continuando..."  -ForegroundColor Red
+    }
+} else {
+    Write-Host "&#x1F680; Oh My Posh n&#xE3;o encontrado, pulando o download do tema." -ForegroundColor Yellow
+}
+# Instalar &#xED;cones do terminal
+try {
+    Install-Module -Name Terminal-Icons -Force
+    Write-Host "&#x2705; M&#xF3;dulo de &#xED;cones do terminal instalado com sucesso." -ForegroundColor Green
+} catch {
+    Write-Host "&#x274C; Falha ao instalar os &#xED;cones do Terminal. Continuando..." -ForegroundColor Red
+}
+# Instale o Git (necess&#xE1;rio para o posh-git)
+try {
+    winget install -e --id Git.Git --accept-package-agreements --accept-source-agreements --silent
+    Write-Host "&#x2705; Git instalado com sucesso." -ForegroundColor Green
+} catch {
+    Write-Host "&#x274C; A instala&#xE7;&#xE3;o do Git falhou. Continuando..." -ForegroundColor Red
+}
+# Instale o posh-git (se o Git estiver instalado)
+if (Get-Command git -ErrorAction SilentlyContinue) {
+    try {
+        Install-Module posh-git -Scope CurrentUser -Force 
+        Write-Host "&#x2705; posh-git instalado com sucesso." -ForegroundColor Green
+    } catch {
+        Write-Host "&#x274C; A instala&#xE7;&#xE3;o do posh-git falhou. Continuando..." -ForegroundColor Red
+    }
+} else {
+    Write-Host "&#x1F680; Git n&#xE3;o encontrado, instala&#xE7;&#xE3;o do posh-git ignorada." -ForegroundColor Yellow
+}
+
+# ==============================INSTALA&#xC7;&#xC3;O DO APPS=========================================
+function Install-App {
+    param (
+        [string]$AppId,
+        [string]$AppName
+    )
+    try {
+        winget install -e --id $AppId --accept-package-agreements --accept-source-agreements --silent --source winget
+        Write-Host "&#x2705; $AppName Instalado com sucesso." -ForegroundColor Green
+    } catch {
+        Write-Host "&#x274C; $AppName a instala&#xE7;&#xE3;o falhou. Continuando..." -ForegroundColor Red
+    }
+}
+# Lista de aplicaciones a instalar
+$apps = @(
+    @{ id = "AnyDeskSoftwareGmbH.AnyDesk"; name = "AnyDesk" },
+    #@{ id = "Microsoft.PowerToys"; name = "PowerToys" },
+	#@{ id = "Mobatek.MobaXterm"; name = "MobaXterm" },
+    #@{ id = "Microsoft.VisualStudioCode"; name = "Visual Studio Code" },
+	@{id = "Google.Chrome"; name = "Google Chrome"},
+	@{id = "Notepad++.Notepad++"; name = "Notepad++"},
+	@{id = "Microsoft.Teams"; name = "Teams"},
+	@{id = "PuTTY.PuTTY"; name = "PuTTY"},
+	@{id = "Skillbrains.Lightshot"; name = "Lightshot"},
+    @{ id = "7zip.7zip"; name = "7zip" }
+)
+# Instalar todas las aplicaciones
+foreach ($app in $apps) {
+    Install-App -AppId $app.id -AppName $app.name
+}
+# Update PowerShell Help
+if (-not (Get-Help -ErrorAction SilentlyContinue)) {
+    try {
+        Update-Help
+        Write-Host "&#x2705; A Ajuda do PowerShell foi atualizada com sucesso." -ForegroundColor Green
+    } catch {
+        Write-Host "&#x274C; Falha ao atualizar a Ajuda do PowerShell. Continuando..." -ForegroundColor Red
+    }
+} else {
+    Write-Host "&#x1F680; A Ajuda do PowerShell j&#xE1; foi atualizada." -ForegroundColor Yellow
+}
+
+# Define o diret&#xF3;rio atual do script
+  Write-Host "&#x1F680; Instalando programas adicionais..." -ForegroundColor Yellow
+$pastaAtual = "C:\Installers\"
+# Busca todos os arquivos .exe e .msi na pasta
+Get-ChildItem -Path $pastaAtual -Filter *.exe, *.msi | ForEach-Object {
+    Write-Host "&#x1F680; Instalando: $($_.Name)..." -ForegroundColor Cyan
+    
+    # Executa o instalador de forma silenciosa e aguarda o t&#xE9;rmino
+    Start-Process -FilePath $_.FullName -ArgumentList "/S /qn /norestart" -Wait -NoNewWindow
+}
+Write-Host "&#x2705; Todas as instala&#xE7;&#xF5;es foram conclu&#xED;das!" -ForegroundColor Green
+
+
+
+Write-Host "Execu&#xE7;&#xE3;o do script conclu&#xED;da!" -ForegroundColor Green
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-04.ps1">
+foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
+    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'sources\sxs' -Resolve -ErrorAction 'SilentlyContinue' ) {
+        Enable-WindowsOptionalFeature -Online -FeatureName 'NetFx3' -Source $found -NoRestart;
+        retornar;
+    }
+}
+'N&#xE3;o foi poss&#xED;vel encontrar nenhum arquivo que corresponda ao padr&#xE3;o.' | Write-Warning;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
+$scripts = @(
+	{
+		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate' -Force -ErrorAction 'SilentlyContinue';
+	};
+	{
+		Remove-Item -LiteralPath 'C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OneDrive.lnk', 'C:\Windows\System32\OneDriveSetup.exe', 'C:\Windows\SysWOW64\OneDriveSetup.exe' -ErrorAction 'Continue';
+	};
+	{
+		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate' -Force -ErrorAction 'SilentlyContinue';
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v ConfigureChatAutoInstall /t REG_DWORD /d 0 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemovePackages.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemoveCapabilities.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemoveFeatures.ps1';
+	};
+	{
+		$name = 'WlanSvc';
+		$start = [datetime]::Now;
+		$timeout = $start.AddMinutes( 1 );
+		$params = @{
+		  Id = 1;
+		  ParentId = 0;
+		  Activity = "Waiting for service '${name}' to start.";
+		};
+		while( $true ) {
+			if( $service = Get-Service -Name $name -ErrorAction 'SilentlyContinue' ) {
+				if( $service.Status -eq 'Running' ) {
+					break;
+				}
+			}
+			if( [datetime]::Now -gt $timeout ) {
+				"Service '${name}' did not start in time." | Write-Warning;
+				break;
+			}
+			Write-Progress @params -PercentComplete $(
+				100 * ( [datetime]::Now - $start ).Ticks / ( $timeout - $start ).Ticks
+			);
+			Start-Sleep -Seconds 5;
+		}
+		Write-Progress @params -Completed;
+	};
+	{
+		netsh.exe wlan add profile filename="C:\Windows\Setup\Scripts\Wifi.xml" user=all;
+	};
+	{
+		netsh.exe wlan connect name="HardDev" ssid="HardDev";
+	};
+	{
+		net.exe accounts /maxpwage:UNLIMITED;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v "DisableCloudOptimizedContent" /t REG_DWORD /d 1 /f;
+		[System.Diagnostics.EventLog]::CreateEventSource( 'UnattendGenerator', 'Application' );
+	};
+	{
+		Register-ScheduledTask -TaskName 'UnlockStartLayout' -Xml $( Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UnlockStartLayout.xml' -Raw );
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy" /v VerifiedAndReputablePolicyState /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v SmartScreenEnabled /t REG_SZ /d "Off" /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v ServiceEnabled /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyMalicious /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyPasswordReuse /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WTDS\Components" /v NotifyUnsafeApp /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" /v HideSystray /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v EnableLUA /t REG_DWORD /d 0 /f
+	};
+	{
+		Remove-Item -LiteralPath 'C:\Users\Public\Desktop\Microsoft Edge.lnk' -ErrorAction 'SilentlyContinue' -Verbose;
+	};
+	{
+		Set-ExecutionPolicy -Scope 'LocalMachine' -ExecutionPolicy 'RemoteSigned' -Force;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v AUOptions /t REG_DWORD /d 4 /f;
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoRebootWithLoggedOnUsers /t REG_DWORD /d 1 /f;
+	};
+	{
+		Register-ScheduledTask -TaskName 'MoveActiveHours' -Xml $( Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\MoveActiveHours.xml' -Raw );
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Dsh" /v AllowNewsAndInterests /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation" /v DisableStartupSound /t REG_DWORD /d 1 /f;
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\EditionOverrides" /v UserSetting_DisableStartupSound /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\BitLocker" /v "PreventDeviceEncryption" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge" /v HideFirstRunExperience /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge\Recommended" /v BackgroundModeEnabled /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge\Recommended" /v StartupBoostEnabled /t REG_DWORD /d 0 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\MakeEdgeUninstallable.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\SetStartPins.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-01.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-02.ps1';
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to customize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\UserOnce.ps1">
+$scripts = @(
+	{
+		Get-AppxPackage -Name 'Microsoft.Windows.Ai.Copilot.Provider' | Remove-AppxPackage;
+	};
+	{
+		[System.Diagnostics.EventLog]::WriteEntry( 'UnattendGenerator', "User '$env:USERNAME' has requested to unlock the Start menu layout.", [System.Diagnostics.EventLogEntryType]::Information, 1 );
+	};
+	{
+		Remove-Item -LiteralPath "${env:USERPROFILE}\Desktop\Microsoft Edge.lnk" -ErrorAction 'SilentlyContinue' -Verbose;
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\AppEvents\Schemes' -Name '(Default)' -Type 'String' -Value '.None';
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'LaunchTo' -Type 'DWord' -Value 1;
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Search' -Name 'SearchboxTaskbarMode' -Type 'DWord' -Value 1;
+	};
+	{
+		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start' -Name 'VisiblePlaces' -Value $( [convert]::FromBase64String('L7Nn496JVUO/zmHzexipN7wkihQM1olCoIBu2buiSIJEgXX+DQiuQovaNO2XtmOUhghzUqpRQ0Kfeyd2WEZZ1A==') ) -Type 'Binary';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\SetColorTheme.ps1';
+	};
+	{
+		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
+			$_.SessionId -eq ( Get-Process -Id $PID ).SessionId;
+		} | Stop-Process -Force;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to configure this user account. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "$env:TEMP\UserOnce.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\DefaultUser.ps1">
+$scripts = @(
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\WindowsCopilot" /v TurnOffWindowsCopilot /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore" /f;
+	};
+	{
+		Remove-ItemProperty -LiteralPath 'Registry::HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Run' -Name 'OneDriveSetup' -Force -ErrorAction 'Continue';
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\GameDVR" /v AppCaptureEnabled /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\Explorer" /v "StartLayoutFile" /t REG_SZ /d "C:\Windows\Setup\Scripts\TaskbarLayoutModification.xml" /f;
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\Explorer" /v "LockedStartLayout" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowSuperHidden" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Edge\SmartScreenEnabled" /ve /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Edge\SmartScreenPuaEnabled" /ve /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\AppHost" /v EnableWebContentEvaluation /t REG_DWORD /d 0 /f;
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\AppHost" /v PreventOverride /t REG_DWORD /d 0 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\TurnOffSystemSounds.ps1';
+	};
+	{
+		$names = @(
+		  'ContentDeliveryAllowed';
+		  'FeatureManagementEnabled';
+		  'OEMPreInstalledAppsEnabled';
+		  'PreInstalledAppsEnabled';
+		  'PreInstalledAppsEverEnabled';
+		  'SilentInstalledAppsEnabled';
+		  'SoftLandingEnabled';
+		  'SubscribedContentEnabled';
+		  'SubscribedContent-310093Enabled';
+		  'SubscribedContent-338387Enabled';
+		  'SubscribedContent-338388Enabled';
+		  'SubscribedContent-338389Enabled';
+		  'SubscribedContent-338393Enabled';
+		  'SubscribedContent-353694Enabled';
+		  'SubscribedContent-353696Enabled';
+		  'SubscribedContent-353698Enabled';
+		  'SystemPaneSuggestionsEnabled';
+		);
+		
+		foreach( $name in $names ) {
+		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
+		}
+	};
+	{
+		$params = @{
+		  LiteralPath = 'Registry::HKU\DefaultUser\Control Panel\Mouse';
+		  Type = 'String';
+		  Value = 0;
+		  Force = $true;
+		};
+		Set-ItemProperty @params -Name 'MouseSpeed';
+		Set-ItemProperty @params -Name 'MouseThreshold1';
+		Set-ItemProperty @params -Name 'MouseThreshold2';
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\Explorer" /v DisableSearchBoxSuggestions /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings" /v TaskbarEndTask /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\DWM" /v ColorPrevalence /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle \""Normal\"" -ExecutionPolicy \""Unrestricted\"" -NoProfile -File \""C:\Windows\Setup\Scripts\UserOnce.ps1\""" /f;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to modify the default user&#x2019;&#x2019;s registry hive. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">
+$scripts = @(
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -Name 'AutoLogonCount' -Type 'DWord' -Force -Value 0;
+	};
+	{
+		cmd.exe /c "rmdir C:\Windows.old";
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-03.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-04.ps1';
+	};
+	{
+		Remove-Item -LiteralPath @(
+		  'C:\Windows\Panther\unattend.xml';
+		  'C:\Windows\Panther\unattend-original.xml';
+		  'C:\Windows\Setup\Scripts\Wifi.xml';
+		) -Force -ErrorAction 'SilentlyContinue' -Verbose;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to finalize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
+		</File>
+	</Extensions>
+</unattend>
