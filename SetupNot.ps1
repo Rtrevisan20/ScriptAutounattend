@@ -8,6 +8,10 @@
 # Função para verificar se o script está sendo executado como administrador
 
 $scriptName = "SetupNot.ps1";
+$pathName = [System.IO.Path]::Combine($env:USERPROFILE, "Desktop", $scriptName)
+# Copiar o script para area de trabalho
+Copy-item -Path "C:\Windows\Setup\Scripts\unattend-04.ps1" -Destination $pathName
+Write-Host "✅ Arquivo $scriptName copiado com sucesso para $pathName." -ForegroundColor Green
 
 function Test-Admin {
     $currentIdentity = [Security.Principal.WindowsIdentity]::GetCurrent()
@@ -306,10 +310,7 @@ function Install-App {
 # Lista de aplicaciones a instalar
 $apps = @(
     @{ id = "AnyDeskSoftwareGmbH.AnyDesk"; name = "AnyDesk" },
-    #@{ id = "Microsoft.PowerToys"; name = "PowerToys" },
-	#@{ id = "Mobatek.MobaXterm"; name = "MobaXterm" },
-    #@{ id = "Microsoft.VisualStudioCode"; name = "Visual Studio Code" },
-	@{id = "Google.Chrome"; name = "Google Chrome"},
+    @{id = "Google.Chrome"; name = "Google Chrome"},
 	@{id = "Notepad++.Notepad++"; name = "Notepad++"},
 	@{id = "Microsoft.Teams"; name = "Teams"},
 	@{id = "PuTTY.PuTTY"; name = "PuTTY"},
@@ -320,7 +321,7 @@ $apps = @(
 foreach ($app in $apps) {
     Install-App -AppId $app.id -AppName $app.name
 }
-# Update PowerShell Help
+# Atualizar a Ajuda do PowerShell
 if (-not (Get-Help -ErrorAction SilentlyContinue)) {
     try {
         Update-Help
@@ -342,8 +343,6 @@ Get-ChildItem -Path $pastaAtual -Filter *.exe, *.msi | ForEach-Object {
     # Executa o instalador de forma silenciosa e aguarda o término
     Start-Process -FilePath $_.FullName -ArgumentList "/S /qn /norestart" -Wait -NoNewWindow
 }
-Write-Host "✅ Todas as instalações foram concluídas!" -ForegroundColor Green
-
-
-
+Write-Host "✅ Todas as instalações adicionais foram concluídas!" -ForegroundColor Green
+Remove-Item -Path $pathName -Force
 Write-Host "Execução do script concluída!" -ForegroundColor Green

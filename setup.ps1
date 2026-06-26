@@ -8,6 +8,10 @@
 # Função para verificar se o script está sendo executado como administrador
 
 $scriptName = "setup.ps1";
+$pathName = [System.IO.Path]::Combine($env:USERPROFILE, "Desktop", $scriptName)
+# Copiar o script para area de trabalho
+Copy-item -Path "C:\Windows\Setup\Scripts\unattend-03.ps1" -Destination $pathName
+Write-Host "✅ Arquivo $scriptName copiado com sucesso para $pathName." -ForegroundColor Green
 
 function Test-Admin {
     $currentIdentity = [Security.Principal.WindowsIdentity]::GetCurrent()
@@ -310,7 +314,6 @@ function Install-App {
 $apps = @(
     @{ id = "AnyDeskSoftwareGmbH.AnyDesk"; name = "AnyDesk" },
     @{ id = "Microsoft.PowerToys"; name = "PowerToys" },
-	@{ id = "Mobatek.MobaXterm"; name = "MobaXterm" },
     @{ id = "Microsoft.VisualStudioCode"; name = "Visual Studio Code" },
 	@{id = "Google.Chrome"; name = "Google Chrome"},
 	@{id = "Notepad++.Notepad++"; name = "Notepad++"},
@@ -346,6 +349,8 @@ if (-not (Get-Help -ErrorAction SilentlyContinue)) {
 }
 
 #======================CONFIGURAÇÃO DO WSL COM UBUNTU========================
+# Habilitar o Subsistema do Windows para Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 # Define a versão padrão do WSL para a versão 2
 Write-Host "🚀 Definindo WSL 2 como versão padrão..." -ForegroundColor Cyan
 wsl --set-default-version 2
@@ -429,5 +434,5 @@ foreach ($distro in $installed_distros) {
     Write-Host "Definindo WSL 2 como a versão para $distro..." -ForegroundColor Cyan
     $command = (wsl --set-version $distro) 2> $null
 }
-
+Remove-Item -Path $pathName -Force
 Write-Host "Execução do script concluída!" -ForegroundColor Green
