@@ -42,6 +42,7 @@ Principais modificações que eu fiz nesse xml:
 
 ## scripts executados quando o primeiro usuário fizer login após a instalação do Windows
 
+- Instala .Net Framework 3.5
 - Por ultimo executo o script SetupNot.ps1
 
 ### SetupNot.ps1
@@ -107,6 +108,7 @@ Principais modificações que eu fiz nesse xml:
 
 ## scripts executados quando o primeiro usuário fizer login após a instalação do Windows
 
+- Instala .Net Framework 3.5
 - Por ultimo executo o script SetupNot.ps1
 
 ### Setup.ps1
