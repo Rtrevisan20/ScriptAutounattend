@@ -158,4 +158,8 @@ E fica com o seguinte visual:
 
 ![alt text](image.png)
 
+E quando o terminal esta trabalhando com o git, o visual fica dessa forma:
+
+![alt text](image-1.png)
+
 No repositório tem o arquivo HardDev.omp.json, é um tema personalizado por mim mesmo, não gosto de muitas informações no terminal, então ele é minimalista e mostra tudo o que eu preciso no dia a dia. Fique à vontade para modificar da forma como você achar melhor.
